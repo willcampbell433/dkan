@@ -1,0 +1,10 @@
+{
+    "name": "fmizzell/dkan",
+    "authors": [
+        {
+            "name": "fmizzell",
+            "email": "fmizzell@1312210.no-reply.drupal.org"
+        }
+    ],
+    "require": {}
+}

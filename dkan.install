@@ -812,3 +812,13 @@ function dkan_update_7034() {
 
   $storage->returnBin($bin);
 }
+
+/** 
+ * Enable new search feature
+ */
+function dkan_update_7035() {
+  // check that the core modules are still enabled
+  if (module_exists('dkan_sitewide_search_db') && module_exists('dkan_sitewide_panels')) {
+    module_enable(array('dkan_dataset_search'));
+  }
+}

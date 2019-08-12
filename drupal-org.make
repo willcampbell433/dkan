@@ -371,7 +371,11 @@ projects:
   workbench_email:
     version: '3.12'
   workbench_moderation:
-    version: '3.0'
+    download:
+      type: git
+      url: https://git.drupal.org/project/workbench_moderation.git
+      branch: 7.x-3.x
+      revision: 3fcb1a66e87a539f06664502141abc8f37712929
     patch:
       2360973: https://www.drupal.org/files/issues/workbench_moderation-install-warnings-2360973-3.patch
       1512442: https://www.drupal.org/files/issues/1512442-20-workbench_moderation-fix_access_check.patch

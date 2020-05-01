@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "setup": "npm install && bower install",
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "browser-sync": "~2.7.4",
@@ -23,6 +25,8 @@
     "gulp-shell": "~0.4.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "~3.0.5",
-    "gulp-uglify": "^1.5.1"
-  }
+    "gulp-uglify": "^1.5.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
